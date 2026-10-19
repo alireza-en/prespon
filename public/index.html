@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="فروشگاه اینترنتی پرسپون">
+    <title>Prespon | فروشگاه اینترنتی</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <div class="announcement">
+        ارسال رایگان برای سفارش‌های بالای ۲ میلیون تومان
+    </div>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a class="logo" href="/">Prespon<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="باز کردن منو">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">خانه</a>
+                <a href="#products">محصولات</a>
+                <a href="#about">درباره ما</a>
+                <a href="#contact">تماس با ما</a>
+            </div>
+
+            <div class="nav-actions">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="جست‌وجوی محصول..."
+                    aria-label="جست‌وجوی محصول"
+                >
+
+                <button class="cart-button" id="cartButton">
+                    🛒 سبد خرید
+                    <span id="cartCount">۰</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">به دنیای خرید هوشمند خوش آمدید</span>
+
+                <h1>
+                    خریدی آسان،
+                    <span>تجربه‌ای متفاوت</span>
+                </h1>
+
+                <p>
+                    محصولات مورد علاقه‌ات را با چند کلیک پیدا کن
+                    و از یک خرید ساده و لذت‌بخش لذت ببر.
+                </p>
+
+                <a class="primary-button" href="#products">
+                    مشاهده محصولات
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <span>Prespon</span>
+                    <strong>انتخابی برای زندگی بهتر</strong>
+                    <div class="hero-symbol">✦</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits container">
+            <article class="benefit">
+                <span>🚚</span>
+                <h3>ارسال سریع</h3>
+                <p>تحویل آسان سفارش‌ها</p>
+            </article>
+
+            <article class="benefit">
+                <span>🛡️</span>
+                <h3>خرید مطمئن</h3>
+                <p>تجربه خریدی ساده</p>
+            </article>
+
+            <article class="benefit">
+                <span>💬</span>
+                <h3>پشتیبانی</h3>
+                <p>همراه شما در خرید</p>
+            </article>
+
+            <article class="benefit">
+                <span>✨</span>
+                <h3>انتخاب متنوع</h3>
+                <p>محصولات برای سلیقه‌های مختلف</p>
+            </article>
+        </section>
+
+        <section class="products-section container" id="products">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">ویترین فروشگاه</span>
+                    <h2>محصولات ما</h2>
+                </div>
+
+                <p>محصول مورد علاقه‌ات را انتخاب کن.</p>
+            </div>
+
+            <div class="category-filters" id="categoryFilters">
+                <button class="filter-button active" data-category="all">
+                    همه محصولات
+                </button>
+                <button class="filter-button" data-category="digital">
+                    دیجیتال
+                </button>
+                <button class="filter-button" data-category="accessory">
+                    لوازم جانبی
+                </button>
+                <button class="filter-button" data-category="home">
+                    خانه و زندگی
+                </button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <p>در حال دریافت محصولات...</p>
+            </div>
+        </section>
+
+        <section class="promo container">
+            <div>
+                <span class="eyebrow">انتخاب هوشمندانه</span>
+                <h2>محصول مناسب خودت را پیدا کن</h2>
+                <p>ویترین فروشگاه را ببین و محصولات را مقایسه کن.</p>
+            </div>
+
+            <a class="secondary-button" href="#products">
+                دیدن محصولات
+            </a>
+        </section>
+
+        <section class="about-section container" id="about">
+            <span class="eyebrow">درباره پرسپون</span>
+            <h2>خرید آنلاین، ساده و لذت‌بخش</h2>
+            <p>
+                پرسپون یک پروژه فروشگاه اینترنتی با طراحی واکنش‌گراست
+                که با HTML، CSS، JavaScript و Node.js ساخته می‌شود.
+            </p>
+        </section>
+
+        <section class="contact-section container" id="contact">
+            <div>
+                <span class="eyebrow">ارتباط با ما</span>
+                <h2>سؤالی داری؟</h2>
+                <p>پیامت را برای ما ارسال کن.</p>
+            </div>
+
+            <form id="contactForm">
+                <label for="contactName">نام</label>
+                <input
+                    id="contactName"
+                    name="name"
+                    type="text"
+                    placeholder="نام شما"
+                    required
+                >
+
+                <label for="contactEmail">ایمیل</label>
+                <input
+                    id="contactEmail"
+                    name="email"
+                    type="email"
+                    placeholder="example@email.com"
+                    required
+                >
+
+                <label for="contactMessage">پیام</label>
+                <textarea
+                    id="contactMessage"
+                    name="message"
+                    rows="4"
+                    placeholder="پیام شما..."
+                    required
+                ></textarea>
+
+                <button class="primary-button" type="submit">
+                    ارسال پیام
+                </button>
+
+                <p id="contactStatus" role="status"></p>
+            </form>
+        </section>
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="cart-header">
+            <h2>سبد خرید شما</h2>
+            <button id="closeCart" aria-label="بستن سبد خرید">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-footer">
+            <p>
+                مجموع:
+                <strong id="cartTotal">۰ تومان</strong>
+            </p>
+            <button class="primary-button" id="checkoutButton">
+                ادامه خرید
+            </button>
+        </div>
+    </aside>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a class="logo" href="/">Prespon<span>.</span></a>
+            <p>فروشگاه اینترنتی پرسپون</p>
+            <p>© 2026 Prespon. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
